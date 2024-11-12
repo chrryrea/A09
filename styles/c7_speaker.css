@@ -45,6 +45,53 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+
+/* styles for nav menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    float: left;
+    position: relative;
+}
+
+#nav_menu ul li a {
+    display: block;
+    width: calc(100% / 8);
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: yellow;
+}
+#nav_menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#nav_menu ul li:hover ul {
+    display: block;
+}
+
+#nav_menu ul li ul li {
+    float: none;
+}
+#nav_menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* the styles for the main content */
 main {
 	clear: left;
