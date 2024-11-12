@@ -46,9 +46,6 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* styles for nav menu */
-#nav_menu {
-    background-color: #333;
-}
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
